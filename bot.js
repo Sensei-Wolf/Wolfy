@@ -7,7 +7,7 @@
 
  
 
-client.login('NDAwNzQ5NzY5OTc2MzE1OTA0.DTmadA.T1mEKhOi24uv3M1y-OiOzM_bxyI')
+client.login(process.env.BOT_TOKEN)
 
  const prefix = "!"
 
@@ -31,7 +31,7 @@ client.on('guildMemberAdd', member => {
 
 client.on('message', message => {
     if(message.content == prefix + "help") {
-        message.author.sendMessage("There are no commands right now.")
+        message.channel.sendMessage("There are no commands right now.")
     }   
 });
 
