@@ -10,7 +10,7 @@ let queue = {};
 let prefix = "!";
 
 
-client.login("NDE0NTk2NDIxMjEyMTc2Mzk0.DWpqhw.Ope1nHrmP6H2GfC12suqL1uam9w");
+client.login(process.env.BOT_TOKEN);
 
 
 
