@@ -12,10 +12,9 @@ let prefix = "!";
 client.login(process.env.TOKEN);
 
 
-
 client.on("ready", () => {
-    client.user.setActivity('Owning ' + client.guilds.size + ' servers!!!')
-  });
+    client.user.setActivity('use !help for more info');
+});
 
 
    client.on('message', message => {
